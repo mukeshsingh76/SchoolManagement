@@ -9,7 +9,11 @@ var app = express();
 const port = 3000;
 const route = require("./routes/route");
 
-mongoose.connect("mongodb://localhost:27017/studentmanagement");
+const mongodburl =
+  "mongodb://msingh:password123@ds014118.mlab.com:14118/studentmanagement";
+//const mongodburl = "mongodb://localhost:27017/studentmanagement";
+
+mongoose.connect(mongodburl);
 mongoose.connection.on("connected", () => {
   console.log("Connected successfully");
 });

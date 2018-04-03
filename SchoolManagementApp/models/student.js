@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const StudentSchema = mongoose.Schema({
   roll_number: {
-    type: Number,
+    type: String,
     require: true
   },
   first_name: {
@@ -14,7 +14,7 @@ const StudentSchema = mongoose.Schema({
     require: true
   },
   sex: {
-    type: Boolean,
+    type: String,
     require: true
   }
 });
