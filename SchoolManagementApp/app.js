@@ -25,7 +25,7 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use("/api", route);
 
 app.get("/", (req, res) => {
-  res.send("football");
+  res.send("Welcome to Sogeti");
 });
 
 app.listen(port, () => {
