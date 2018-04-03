@@ -26,7 +26,7 @@ mongoose.connection.on("error", err => {
 app.use(cors());
 app.use(bodyparser.json());
 app.use(express.static(path.join(__dirname, "public")));
-app.use("/api", route);
+// app.use("/api", route);
 
 app.get("/", (req, res) => {
   res.send("Welcome to Sogeti");
