@@ -6,7 +6,7 @@ var cors = require("cors");
 var path = require("path");
 
 var app = express();
-const port = 3000;
+const port = process.env.port || 1337;
 const route = require("./routes/route");
 
 const mongodburl =
